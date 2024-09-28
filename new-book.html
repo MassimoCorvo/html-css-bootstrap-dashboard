@@ -58,38 +58,45 @@
     <!-- End Header -->
 
     <main>
-        
+
+        <!-- Titolo -->
+
         <div class="container-md my-2">
             <h1 class="fw-bold fs-3 mb-2">Nuovo libro</h1>
+
+            <!-- Inizio Form -->
 
             <form>
 
                 <!-- Nome + Cognome Autore-->
+
                 <div class="d-flex">
                     <div class="mb-3 flex-grow-1">
                         <label class="form-label">Nome Autore</label>
-                        <input type="text" class="form-control" placeholder="Inserisci il nome dell'autore">
+                        <input type="text" class="form-control" placeholder="Inserisci il nome dell'autore" required>
                     </div>
 
                     <div class="mb-3 ms-3 flex-grow-1">
                         <label class="form-label">Cognome Autore</label>
-                        <input type="text" class="form-control" placeholder="Inserisci il cognome dell'autore">
+                        <input type="text" class="form-control" placeholder="Inserisci il cognome dell'autore" required>
                     </div>
                 </div>
 
                 <!-- Titolo -->
+
                 <div class="mb-3">
                     <label class="form-label">Titolo</label>
-                    <input type="text" class="form-control" placeholder="Inserisci il titolo del libro">
+                    <input type="text" class="form-control" placeholder="Inserisci il titolo del libro" required>
                     <div class="fs-6 text-secondary">Titolo versione italiana</div>
                 </div>
 
 
                 <!-- Genere -->
+
                 <div class="genere">
                     <label class="form-label">Genere</label>
                     <select class="form-select mb-3" aria-label="Genere">
-                        <option selected>Open this select menu</option>
+                        <option selected>Scegli il genere</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
@@ -97,26 +104,42 @@
                 </div>
 
                 <!-- Anno -->
+
                 <div class="mb-3">
                     <label class="form-label">Anno di pubblicazione</label>
                     <input type="text" class="form-control" placeholder="Inserisci l'anno">
                 </div>
 
                 <!-- ISBN  -->
+
                 <div class="mb-5">
                     <label class="form-label">ISBN#</label>
                     <input type="text" class="form-control" placeholder="Inserisci il codice ISBN#">
                 </div>
-                
+
                 <hr>
 
+                <!-- Note -->
 
+                <div class="my-3">
+                    <label class="form-label">Note</label>
+                    <textarea class="form-control" rows="3" placeholder="Inserisci eventuali note sul libro"></textarea>
+                </div>
 
+                <!-- Formato digitale checkbox -->
 
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                        Disponibile anche in digitale
+                    </label>
+                </div>
 
+                <!-- Invia -->
 
-
-
+                <div class="my-3">
+                    <button class="btn btn-primary" type="submit">Aggiungi Libro</button>
+                </div>
 
             </form>
         </div>
